@@ -15,17 +15,8 @@ def handle_admin(dsn, conn):
             users_str += f"ID: {row[0]} Был в сети: {row[1]} Логин: {row[2]}\n"
 
 
-        cursor.execute("SELECT [ID], [User], [Test], [Answers], [Time_log] FROM [Logs]")
-        logs = cursor.fetchall()
 
-        logs_str = "\nЛоги тестирований:\n\n "
-        for log in logs:
-            logs_str += (
-                f"ID: {log[0]}  Пользователь: {log[1]} Тест: {log[2]} "
-                f"Ответов правильных: {log[3]} Время: {log[4]}\n"
-            )
-
-        full_result = users_str + "\n" + logs_str
+        full_result = users_str
 
         print("rez:")
         print(full_result)

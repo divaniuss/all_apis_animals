@@ -2,7 +2,7 @@ import requests
 import random
 import json
 
-from pages.InAccount.img_pages.accsess_keys import accsess_key_bird
+from server_actions.api_drt.accsess_keys import accsess_key_bird
 
 def get_bird(conn):
     accsess_key = accsess_key_bird

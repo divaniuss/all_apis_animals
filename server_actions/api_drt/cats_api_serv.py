@@ -2,7 +2,7 @@ import random
 import requests
 import json
 
-from pages.InAccount.img_pages.accsess_keys import accsess_key_cat
+from server_actions.api_drt.accsess_keys import accsess_key_cat
 
 def get_cat(conn):
     accsess_key = accsess_key_cat
